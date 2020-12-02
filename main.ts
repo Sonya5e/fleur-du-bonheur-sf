@@ -38,4 +38,7 @@ game.onUpdateInterval(100, function () {
         . . . . . . . . . . . . . . . . 
         `, mySprite, randint(-25, 25), randint(-25, 25))
     projectile.lifespan = 3000
+    if (projectile.vx < 0) {
+        projectile.image.flipX()
+    }
 })
